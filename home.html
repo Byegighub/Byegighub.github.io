@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comrades' Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            height: 100vh; /* Full viewport height */
+            position: relative;
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .motto {
+            font-size: 16px;
+            color: #666;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .search-container input {
+            padding: 8px;
+            margin: 10px auto;
+            width: 90%; /* Makes the search bar flexible */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: url('https://via.placeholder.com/150') no-repeat center center / cover; /* Placeholder image, replace with actual profile image */
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            position: fixed;
+            bottom: 50px;
+            left: 0;
+            padding: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        .category i {
+            font-size: 24px;
+            color: #888; /* Default color, overridden below */
+            margin-bottom: 5px;
+        }
+        .category .fa-tshirt { color: #007bff; } /* Blue for Clothing */
+        .category .fa-couch { color: #795548; } /* Brown for Furniture */
+        .category .fa-tv { color: #333333; } /* Dark grey for Electronics */
+        .category .fa-gem { color: #4CAF50; } /* Shiny green, mimicking the look of shiny jewelry */
+        .category .fa-heart { color: #FF0000; } /* Red for Health & Beauty */
+        .footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+        }
+        .footer i {
+            font-size: 20px;
+            color: #555;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 20px;
+            width: 90%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 110px; /* Adjust based on footer height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars menu-icon" onclick="location.href='menu.html';"></i>
+        <div class="title">KAMRADES' SOKOPLACE</div>
+        <div class="motto">comrade for comrade</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+        <a href="signin.html"> <!-- Link to Sign In page -->
+            <button class="profile"></button>
+        </a>
+    </header>
+    <div class="categories">
+        <div class="category"><i class="fas fa-tshirt"></i></div>
+        <div class="category"><i class="fas fa-couch"></i></div>
+        <div class="category"><i class="fas fa-tv"></i></div>
+        <div class="category"><i class="fas fa-gem"></i></div>
+        <div class="category"><i class="fas fa-heart"></i></div>
+    </div>
+    <div class="main-content">
+        <!-- Content can be dynamically added here -->
+    </div>
+    <div class="footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+</body>
+</html>
